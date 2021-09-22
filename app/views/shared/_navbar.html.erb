@@ -1,0 +1,29 @@
+<div class="navbar navbar-expand-lg navbar-light navbar-mib">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "logo-mib.png", height: 40 %>
+  <% end %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to t('link.services'), root_path(anchor: 'services'), class: "nav-link", id: "nav-services" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to t('link.calculator'), calculator_path, class: "nav-link", id: "nav-calculator" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to t('link.vehicule'), root_path(anchor: 'vehicule'), class: "nav-link", id: "nav-vehicule" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to t('link.contact'), root_path(anchor: 'contact'), class: "nav-link", id: "nav-contact" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to image_tag('flag-fr.png'), url_for(locale: 'fr') %>
+        <%= link_to image_tag('flag-en.png'), url_for(locale: 'en') %>
+      </li>
+    </ul>
+  </div>
+</div>
+
