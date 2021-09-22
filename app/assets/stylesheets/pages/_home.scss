@@ -1,1 +1,100 @@
-// Specific CSS for your home-page
+.mib-home {
+  height: 90vh;
+  padding: 40px 15px;
+}
+.title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.title > p {
+  font-size: 18px;
+  max-width: 500px;
+}
+.title > a {
+  border: solid 2px #000000;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  margin: 40px 0px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.title > a:hover {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+.mib-brand > h1 {
+  font-family: 'Rammetto One', cursive;
+  font-size: 40px;
+  margin-bottom: 0px !important;
+}
+
+.mib-brand > h2 {
+  font-size: 24px;
+}
+
+.title-section h2 {
+  padding: 40px 50px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.mib-services,
+.mib-contact {
+  background-color: black;
+  color: white;
+  padding: 50px 0px 80px 0px;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service {
+  max-width: 360px;
+  height: 240px;
+  padding: 15px 5px;
+  margin: 5px 5px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.service-logo img {
+  height: 50px;
+}
+
+.service-title h4 {
+  font-weight: bold;
+  margin: 15px 0px 25px 0px;
+}
+
+.mib-vehicule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px 80px 0px;
+}
+
+.vehicule-description > p {
+  max-width: 500px;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+
+@media(max-width: 568px) {
+  .mib-vehicule > img {
+    width: 360px;
+  }
+
+}

@@ -6,8 +6,8 @@ fr:
     calculator: "calculateur"
   home:
     subtitle: "- CHAUFFEUR PRIVÉ -"
-    slogan: "Laisser vous transporter à bord d'un véhicule avvec chauffeur dans un confort et une sécurité optimale."
-    btn: "RÉSERVER"
+    slogan: "Laisser vous transporter à bord d'un véhicule avec chauffeur dans un confort et une sécurité optimale."
+    btn: "DEVIS GRATUIT"
   service:
     title:
       one: "TRANSFERT"
@@ -18,7 +18,7 @@ fr:
     text:
       one: "Transfert aéroport, gare, hôtel, nous vous conduisons à votre destination et restons à votre disposition."
       two: "Nous mettons à disposition notre véhicule pour tous vos évènements VIP."
-      three: "Solution et location de transport pour congrès, véhicule à disposition pour conduire vos collaborateurs VIP et dirigeants."
+      three: "Location de transport pour congrès, véhicule à disposition pour conduire vos collaborateurs VIP et dirigeants."
       four: "Profitez de tour et packages pour un séjour touristique réussi dans la région."
       five: "Nous prenons en charge et organisons toutes vos demandes, shopping, retrait et livraison spéciale."
   vehicule:

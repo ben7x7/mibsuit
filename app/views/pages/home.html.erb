@@ -1,11 +1,13 @@
 
 <div class="mib-home">
   <div class="title text-center">
-    <h1>MIB SUIT</h1>
-    <p><%= t('home.subtitle') %></p>
+    <div class="mib-brand">
+      <h1>MIB SUIT</h1>
+      <h2><%= t('home.subtitle') %></h2>
+    </div>
     <%= image_tag 'logo-mib.png' %>
     <p><%= t('home.slogan') %></p>
-    <%= link_to t('home.btn'), class:'btn-contact' %>
+    <%= link_to t('home.btn'), class:'btn-home' %>
   </div>
 </div>
 <div class="mib-services" id="services">
@@ -18,7 +20,7 @@
         <%= image_tag 'logo-transfert.png' %>
       </div>
       <div class="service-title">
-        <h2><%= t('service.title.one') %></h2>
+        <h4><%= t('service.title.one') %></h4>
       </div>
       <div class="service-text">
         <p><%= t('service.text.one') %></p>
@@ -30,7 +32,7 @@
         <%= image_tag 'logo-event.png' %>
       </div>
       <div class="service-title">
-        <h2><%= t('service.title.two') %></h2>
+        <h4><%= t('service.title.two') %></h4>
       </div>
       <div class="service-text">
         <p><%= t('service.text.two') %></p>
@@ -42,7 +44,7 @@
         <%= image_tag 'logo-business.png' %>
       </div>
       <div class="service-title">
-        <h2><%= t('service.title.three') %></h2>
+        <h4><%= t('service.title.three') %></h4>
       </div>
       <div class="service-text">
         <p><%= t('service.text.three') %></p>
@@ -54,7 +56,7 @@
         <%= image_tag 'logo-tourism.png' %>
       </div>
       <div class="service-title">
-        <h2><%= t('service.title.four') %></h2>
+        <h4><%= t('service.title.four') %></h4>
       </div>
       <div class="service-text">
         <p><%= t('service.text.four') %></p>
@@ -66,7 +68,7 @@
         <%= image_tag 'logo-conciergerie.png' %>
       </div>
       <div class="service-title">
-        <h2><%= t('service.title.five') %></h2>
+        <h4><%= t('service.title.five') %></h4>
       </div>
       <div class="service-text">
         <p><%= t('service.text.five') %></p>
@@ -79,16 +81,18 @@
   <div class="title-section">
     <h2>VEHICULE</h2>
   </div>
-  <%= t('vehicule-name') %>
-  <%= image_tag 'mib-vehicule.png' %>
-  <%= t('vehicule-description') %>
+  <h4><%= t('vehicule.name') %></h4>
+  <%= image_tag 'mib-toyota.WebP' %>
+  <div class="vehicule-description">
+    <p><%= t('vehicule.description') %></p>
+  </div>
 </div>
 
 <div class="mib-contact" id="contact">
   <div class="title-section">
     <h2>CONTACT</h2>
   </div>
-  <div class="contact-infos">
+  <div class="contact-infos text-center">
     <p>06.13.35.23.49</p>
     <p>abdelk@mibsuit.com</p>
     <p>459 Rue Francois Estier  <br> 01170 Echenevex</p>
