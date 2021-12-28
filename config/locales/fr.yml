@@ -12,7 +12,7 @@ fr:
     title:
       one: "TRANSFERT"
       two: "EVENEMENTS"
-      three: " FORMULE BUSINESS"
+      three: "FORMULE BUSINESS"
       four: "FORMULE TOURISME"
       five: "CONCIERGERIE"
     text:
@@ -21,6 +21,7 @@ fr:
       three: "Location de transport pour congrès, véhicule à disposition pour conduire vos collaborateurs VIP et dirigeants."
       four: "Profitez de tour et packages pour un séjour touristique réussi dans la région."
       five: "Nous prenons en charge et organisons toutes vos demandes, shopping, retrait et livraison spéciale."
+    btn: "En savoir +"
   vehicule:
-    name: "TOYOTA 3000"
+    name: "TOYOTA CAMRY HYBRIDE"
     description: "Capacité de 1 à 3 places avec bagages, idéale pour vos trajets personnels, transferts d’aéroport ou vos trajets professionnels quotidiens."
