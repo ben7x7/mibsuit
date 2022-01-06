@@ -3,7 +3,7 @@ fr:
     services: "SERVICES"
     contact: "CONTACT"
     vehicule: "VEHICULE"
-    calculator: "CALCULATEUR"
+    calculator: "TARIFS"
     langues: "LANGUES"
   home:
     subtitle: "- CHAUFFEUR PRIVÉ -"
@@ -26,3 +26,6 @@ fr:
   vehicule:
     name: "TOYOTA CAMRY HYBRIDE"
     description: "Capacité de 1 à 3 places avec bagages, idéale pour vos trajets personnels, transferts d’aéroport ou vos trajets professionnels quotidiens."
+  tarifs:
+    title: "Devis en ligne"
+    subtitle: "Calculer le montant de votre course."
