@@ -1,18 +1,20 @@
 
 <div class="mib-home">
-  <div class="title text-center">
-    <div class="mib-brand">
-      <h1>MIB SUIT</h1>
-      <h2><%= t('home.subtitle') %></h2>
+  <div class="home-wraper">
+    <div class="title text-center">
+      <div class="mib-brand">
+        <h1>MIB SUIT</h1>
+        <h2><%= t('home.subtitle') %></h2>
+      </div>
+      <%= image_tag 'logo-mib.png' %>
+      <p><%= t('home.slogan') %></p>
+      <%= link_to t('home.btn'), class:'btn-home' %>
     </div>
-    <%= image_tag 'logo-mib.png' %>
-    <p><%= t('home.slogan') %></p>
-    <%= link_to t('home.btn'), class:'btn-home' %>
   </div>
 </div>
 <div class="mib-services" id="services">
   <div class="title-section">
-    <h2>SERVICES</h2>
+    <h2> NOS SERVICES</h2>
   </div>
   <div class="cards-container">
     <div class="card">
@@ -23,7 +25,6 @@
         <a href="#"><%= t('service.btn') %></a>
       </div>
     </div>
-
     <div class="card">
       <div class="content">
         <%= image_tag 'logo-events.png' %>
@@ -32,7 +33,6 @@
         <a href="#"><%= t('service.btn') %></a>
       </div>
     </div>
-
     <div class="card">
       <div class="content">
         <%= image_tag 'logo-business.png' %>
@@ -41,7 +41,6 @@
         <a href="#"><%= t('service.btn') %></a>
       </div>
     </div>
-
     <div class="card">
       <div class="content">
         <%= image_tag 'logo-tourisme.png' %>
@@ -50,7 +49,6 @@
         <a href="#"><%= t('service.btn') %></a>
       </div>
     </div>
-
     <div class="card">
       <div class="content">
         <%= image_tag 'logo-concierge.png' %>
@@ -59,13 +57,12 @@
         <a href="#"><%= t('service.btn') %></a>
       </div>
     </div>
-
   </div>
 </div>
 
 <div class="mib-vehicule" id="vehicule">
   <div class="title-section">
-    <h2>VEHICULE</h2>
+    <h2 id="title-vehicule">VEHICULE</h2>
   </div>
   <h4><%= t('vehicule.name') %></h4>
   <%= image_tag 'mib-toyota.WebP' %>
@@ -76,15 +73,39 @@
 
 <div class="mib-contact" id="contact">
   <div class="title-section">
-    <h2>CONTACT</h2>
+    <h2>CONTACTEZ NOUS</h2>
   </div>
   <div class="contact-infos text-center">
-    <p>06.13.35.23.49</p>
-    <p>abdelk@mibsuit.com</p>
-    <p>459 Rue Francois Estier  <br> 01170 Echenevex</p>
+    <div class="info-details">
+      <div class="info-icon">
+        <i class="fas fa-mobile-alt fa-2x"></i>
+      </div>
+      <p>06.13.35.23.49</p>
+    </div>
+    <div class="info-details">
+      <div class="info-icon">
+        <i class="far fa-envelope fa-2x"></i>
+      </div>
+      <p>abdelk@mibsuit.com</p>
+    </div>
+    <div class="info-details">
+      <div class="info-icon">
+        <i class="fas fa-map-marker-alt fa-2x"></i>
+      </div>
+      <p>459 Rue Francois Estier  <br> 01170 Echenevex</p>
+    </div>
   </div>
   <div class="contact-form">
-
+    <div class="form-wrapper">
+      <form action="https://formspree.io/{form_id}" method="POST" >
+        <input type="text" name="name" id="full-name" autocomplete="off" required placeholder="Nom" />
+        <input type="email" name="_replyto" autocomplete="off" required placeholder="Email"/>
+        <input type="phone" name="phone" autocomplete="off" required placeholder="Téléphone"/>
+        <textarea row="3" name="message" id="message" required placeholder="Message..."></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Formulaire SAP">
+        <input type="submit" value="ENVOYER VOTRE MESSAGE" class="btn-contact">
+      </form>
+    </div>
   </div>
   <div class="contact-map">
 

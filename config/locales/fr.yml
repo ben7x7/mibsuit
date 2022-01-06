@@ -1,9 +1,10 @@
 fr:
   link:
-    services: "services"
-    contact: "contact"
-    vehicule: "vehicule"
-    calculator: "calculateur"
+    services: "SERVICES"
+    contact: "CONTACT"
+    vehicule: "VEHICULE"
+    calculator: "CALCULATEUR"
+    langues: "LANGUES"
   home:
     subtitle: "- CHAUFFEUR PRIVÉ -"
     slogan: "Laisser vous transporter à bord d'un véhicule avec chauffeur dans un confort et une sécurité optimale."

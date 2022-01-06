@@ -1,31 +1,33 @@
-<div class="navbar navbar-expand-lg navbar-light navbar-mib">
-  <div class="nav-logo">
-    <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag "logo-mib.png", height: 40 %>
+<nav class="navbar navbar-expand-lg">
+  <div class="navbar-brand">
+    <%= link_to root_path, class:"navbar-brand" do %>
+      <span id="brand">MIB SUIT</span>
     <% end %>
   </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <%= link_to t('link.services'), root_path(anchor: 'services'), class: "nav-link", id: "nav-services" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to t('link.calculator'), calculator_path, class: "nav-link", id: "nav-calculator" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to t('link.vehicule'), root_path(anchor: 'vehicule'), class: "nav-link", id: "nav-vehicule" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to t('link.contact'), root_path(anchor: 'contact'), class: "nav-link", id: "nav-contact" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to image_tag('flag-fr.png'), url_for(locale: 'fr') %>
-        <%= link_to image_tag('flag-en.png'), url_for(locale: 'en') %>
-      </li>
-    </ul>
-  </div>
-</div>
 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      <%= link_to t('link.services'), root_path(anchor: 'services'), class: "nav-link", id: "nav-services" %>
+      <%= link_to t('link.calculator'), calculator_path, class: "nav-link", id: "nav-calculator" %>
+      <%= link_to t('link.vehicule'), root_path(anchor: 'vehicule'), class: "nav-link", id: "nav-vehicule" %>
+      <%= link_to t('link.contact'), root_path(anchor: 'contact'), class: "nav-link", id: "nav-contact" %>
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <%= t('link.langues') %>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+        <ul class="languages-list">
+          <li>
+            <%= link_to image_tag('flag-fr.png'), url_for(locale: 'fr') %>
+          </li>
+          <li>
+            <%= link_to image_tag('flag-en.png'), url_for(locale: 'en') %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

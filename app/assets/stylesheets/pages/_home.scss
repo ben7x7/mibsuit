@@ -1,14 +1,33 @@
 .mib-home {
-  height: 90vh;
-  padding: 40px 15px;
+  height: 100vh;
+  padding: 100px 15px 80px 15px;
+  background-image: linear-gradient(-225deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.8) 20%), image-url('vtc.jpg');
+  background-size: cover;
 }
+
 .title {
+  padding-top: 60px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
+
+.mib-brand > h1 {
+  font-family: 'Rammetto One', cursive;
+  font-size: 40px;
+  margin-bottom: 0px !important;
+}
+
+.mib-brand > h2 {
+  font-size: 24px;
+}
+
+.title > img {
+  margin: 30px 0px;
+}
+
 .title > p {
   font-size: 18px;
   max-width: 500px;
@@ -29,16 +48,6 @@
   color: black;
 }
 
-.mib-brand > h1 {
-  font-family: 'Rammetto One', cursive;
-  font-size: 40px;
-  margin-bottom: 0px !important;
-}
-
-.mib-brand > h2 {
-  font-size: 24px;
-}
-
 
 // SECTION SERVICES
 
@@ -46,7 +55,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 50px 0px;
+  padding: 80px 0px;
   background-color: #161623;
 }
 
@@ -77,6 +86,7 @@
   text-align: center;
   z-index: 2;
   color: white;
+  padding: 30px 0px 50px 0px;
 }
 
 .cards-container {
@@ -153,10 +163,15 @@
 // SECTION VEHICULE
 
 .mib-vehicule {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px 0px 80px 0px;
+}
+
+#title-vehicule {
+  color: #161623;
 }
 
 .vehicule-description > p {
@@ -175,7 +190,102 @@
 
 // SECTION CONTACT
 .mib-contact {
+  min-height: 100vh;
   background-color: black;
-  color: white;
+  color: #B89968;
   padding: 50px 0px 80px 0px;
 }
+
+.contact-infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.info-details p {
+  color: #F9F9F9;
+}
+
+.info-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #B89968;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.far,
+.fas {
+  color: #161623;
+}
+
+.form-wrapper {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding: 30px 15px;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input, textarea {
+  background-color: black;
+  border-radius: 5px;
+  border: solid 1px #393939 !important;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 8px;
+  color: $light-gray;
+  outline-color: #B89968 !important;
+}
+input {
+  height: 55px;
+}
+textarea {
+  height: 96px;
+}
+.btn-contact {
+  color: #FFFFFF !important;
+  padding: 10px 25px !important;
+  margin: 25px 0px !important;
+  background-color: #B89968 !important;
+  border: 3px solid #B89968 !important;
+  border-radius: 5px !important;
+  width: 100% !important;
+  font-weight: bold;
+}
+.btn-contact:hover {
+  border: 3px solid #B89968 !important;
+  background-color: transparent !important;
+  color: #B89968 !important;
+}
+
+/*******************************
+         MEDIA PHONES
+*******************************/
+
+
+@media screen and (max-width: 576px){
+  .form-wrapper {
+    width: 100%;
+  }
+
+}
+
