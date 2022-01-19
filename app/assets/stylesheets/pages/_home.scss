@@ -32,26 +32,89 @@
   font-size: 18px;
   max-width: 500px;
 }
-.title > a {
+.title .btn-phone,
+.title .home-buttons a {
   border: solid 2px #000000;
   border-radius: 10px;
   background-color: black;
   color: white;
   padding: 10px 20px;
-  margin: 40px 0px;
+  margin: 40px 10px;
   text-decoration: none;
   font-weight: bold;
 }
-.title > a:hover {
+.title .home-buttons a:hover {
   text-decoration: none;
   background-color: white;
   color: black;
 }
+.title .home-buttons {
+  display: flex;
+}
+i.fa-phone-alt {
+  color: white !important;
+  margin-right: 15px;
+}
+// SECTION CHAUFFEUR
 
+.mib-driver {
+  padding: 80px 0px;
+  background: white;
+  color: #161623;
+}
+
+.title-driver h2 {
+  text-align: center;
+  font-weight: bold;
+  padding: 30px 0px 30px 0px;
+}
+
+.subtitle-driver h4 {
+  text-align: center;
+  font-size: 18px;
+  color: #889195;
+  max-width: 900px;
+  margin: auto;
+  padding: 0px 0px 50px 15px;
+}
+
+.driver-policies {
+  max-width: 900px;
+  margin: auto;
+}
+
+.policy-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.policy-name p {
+  margin-bottom: 0px !important;
+}
+
+.policy-icon {
+  background-color: #cbcfd1;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px !important;
+  color: black;
+  margin: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+i.fa-user-tie,
+i.fa-euro-sign,
+i.fa-credit-card {
+  width: 60px !important;
+  display: flex;
+  justify-content: center;
+}
 
 // SECTION SERVICES
 
-#services {
+#prestations {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -59,7 +122,7 @@
   background-color: #161623;
 }
 
-#services::before {
+#prestations::before {
   content: '';
   position: absolute;
   top: 0;
@@ -67,10 +130,10 @@
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
-  clip-path: circle(30% at right 70%);
+  clip-path: circle(25% at right 70%);
 }
 
-#services::after {
+#prestations::after {
   content: '';
   position: absolute;
   top: 0;
@@ -78,7 +141,7 @@
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-  clip-path: circle(20% at 5% 10%);
+  clip-path: circle(20% at 0% 40%);
 }
 
 .title-section h2 {
@@ -86,7 +149,17 @@
   text-align: center;
   z-index: 2;
   color: white;
-  padding: 30px 0px 50px 0px;
+  padding: 30px 0px 30px 0px;
+}
+
+.subtitle-section h4 {
+  font-size: 18px;
+  text-align: center;
+  z-index: 2;
+  color: #889195;
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 50px;
 }
 
 .cards-container {
@@ -103,7 +176,7 @@
 .cards-container .card {
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 300px;
   margin: 20px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -168,6 +241,7 @@
   flex-direction: column;
   align-items: center;
   padding: 50px 0px 80px 0px;
+  position: relative;
 }
 
 #title-vehicule {
@@ -180,12 +254,12 @@
   padding: 30px 15px;
 }
 
-
 @media(max-width: 568px) {
   .mib-vehicule > img {
     width: 360px;
   }
 }
+
 
 
 // SECTION CONTACT

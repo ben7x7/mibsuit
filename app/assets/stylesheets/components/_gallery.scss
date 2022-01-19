@@ -1,0 +1,83 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 150px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.lightbox-enabled {
+  width: 100%;
+  object-fit: cover;
+  transition: all 250ms easy-in-out;
+}
+
+.lightbox-enabled:hover {
+  opacity: .6;
+  cursor: zoom-in;
+}
+
+.lightbox-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $dark-gray;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 250ms ease-in-out;
+}
+
+.lightbox-container.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lightbox-image-wrapper {
+  display: grid;
+  place-items: center;
+  width: 90vw;
+  height: 90vh;
+  position: relative;
+}
+
+.lightbox-btn {
+  display: grid;
+  place-items: center;
+  padding: .8rem;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  position: absolute;
+}
+
+.lightbox-btn.inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.left {
+  left: 5px;
+}
+
+.left:hover, .left:focus {
+  left: 0px;
+}
+
+.right {
+  right: 5px;
+}
+
+.right:hover, .right:focus {
+  right: 0px;
+}
+
+.lightbox-image {
+  width: 100%;
+  object-fit: cover;
+  cursor: zoom-out;
+}

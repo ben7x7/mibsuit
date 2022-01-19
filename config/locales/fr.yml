@@ -7,25 +7,47 @@ fr:
     langues: "LANGUES"
   home:
     subtitle: "- CHAUFFEUR PRIVÉ -"
-    slogan: "Laisser vous transporter à bord d'un véhicule avec chauffeur dans un confort et une sécurité optimale."
+    slogan: "Laissez vous transporter à bord d'un véhicule avec chauffeur dans un confort et une sécurité optimale."
     btn: "DEVIS GRATUIT"
+  chauffeur:
+    title: "CHAUFFEUR PRIVE VTC DANS LE PAYS DE GEX"
+    description: "MIB Suit s'engage à vous offrir une qualité de service haut de gamme."
+    policy:
+      one: "Disponibilité 24h/24 et 7j/7."
+      two: "Chauffeur professionnel expérimenté garantissant votre confort et sécurité, en toute discrétion."
+      three: "S'adapte aux demandes du client et se montre flexible à ses exigences."
+      four: "Des tarifs compétitifs vers toutes les destinations souhaitées."
+      five: "Un paiement sécurisé par carte bancaire à bord du véhicule."
   service:
+    sujet: "NOS PRESTATIONS & SERVICES"
+    subtitle: "Bien plus qu'un simple transfert avec chauffeur privé,"
+    subtitle2: "MIB Suit vous propose des services et des formules sur mesure."
     title:
       one: "TRANSFERT"
       two: "EVENEMENTS"
       three: "FORMULE BUSINESS"
       four: "FORMULE TOURISME"
-      five: "CONCIERGERIE"
+      five: "FORMULE SHOPPING"
+      six: "CONCIERGERIE"
     text:
       one: "Transfert aéroport, gare, hôtel, nous vous conduisons à votre destination et restons à votre disposition."
       two: "Nous mettons à disposition notre véhicule pour tous vos évènements VIP."
       three: "Location de transport pour congrès, véhicule à disposition pour conduire vos collaborateurs VIP et dirigeants."
-      four: "Profitez de tour et packages pour un séjour touristique réussi dans la région."
-      five: "Nous prenons en charge et organisons toutes vos demandes, shopping, retrait et livraison spéciale."
+      four: "Profitez de tour et forfaits pour un séjour touristique réussi dans la région."
+      five: "Nous prenons en charge et organisons toutes vos demandes, retrait et livraison spéciale."
+      six: ""
     btn: "En savoir +"
   vehicule:
+    title: "VEHICULE ECOLOGIQUE"
     name: "TOYOTA CAMRY HYBRIDE"
     description: "Capacité de 1 à 3 places avec bagages, idéale pour vos trajets personnels, transferts d’aéroport ou vos trajets professionnels quotidiens."
   tarifs:
     title: "Devis en ligne"
     subtitle: "Calculer le montant de votre course."
+  contact:
+    title: "FORMULAIRE DE DEVIS & CONTACT"
+    label:
+      name: "Nom"
+      email: "Email"
+      phone: "Téléphone"
+      message: "Message"
