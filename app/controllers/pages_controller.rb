@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def calculator
   end
+
+  def services
+  end
 end

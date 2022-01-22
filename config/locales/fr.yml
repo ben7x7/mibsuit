@@ -29,13 +29,14 @@ fr:
       four: "FORMULE TOURISME"
       five: "FORMULE SHOPPING"
       six: "CONCIERGERIE"
+    page: "SERVICES DE TRANSPORT A LA DEMANDE"
     text:
-      one: "Transfert aéroport, gare, hôtel, nous vous conduisons à votre destination et restons à votre disposition."
-      two: "Nous mettons à disposition notre véhicule pour tous vos évènements VIP."
-      three: "Location de transport pour congrès, véhicule à disposition pour conduire vos collaborateurs VIP et dirigeants."
-      four: "Profitez de tour et forfaits pour un séjour touristique réussi dans la région."
-      five: "Nous prenons en charge et organisons toutes vos demandes, retrait et livraison spéciale."
-      six: ""
+      one: "Dans le cadre d'un seul déplacement à la demande, que ce soit un transfert aéroport, gare, hôtel, station de ski, nous vous conduisons à la destination souhaitée. Estimer le coût du service en utilisant notre système de tarification en ligne."
+      two: "MIB Suit vous accompagne pour tous vos évènements VIP, tels que vernissage, soirée spectacle, concert, restaurant, discothèque... Nous nous occuperons de la coordination et de la logistique destinées au transport de vos hôtes. "
+      three: "Que ce soit pour quelques heures, le temps d’une journée, d’une semaine, ou plus, nous mettons à votre disposition un véhicule avec chauffeur. Ce dernier adaptera les parcours afin de vous permettre d’être parfaitement à l’heure à vos différents rendez-vous."
+      four: "Voyagez en toute liberté, accompagné de votre chauffeur personnel, pour un voyage plein d’émotion dans des lieux d’exception. Il s’occupe de tout, il ne vous restera qu’à profiter de l’instant présent."
+      five: "Pour toutes vos escapades shopping à Genève, Lyon, Paris, Milan. Votre chauffeur vous conduira dans les meilleurs centres commerciaux, outlets et autres boutiques de votre choix, avec une prise en charge de vos paquets."
+      six: "Libérez-vous des tâches que vous n’avez pas le temps d’effectuer ou simplement celles que MIB Suit pourra exécuter pour vous. Nous vous proposons un service d’assistance personnel sur mesure qui vous est entièrement dévoué."
     btn: "En savoir +"
   vehicule:
     title: "VEHICULE ECOLOGIQUE"
@@ -44,6 +45,7 @@ fr:
   tarifs:
     title: "Devis en ligne"
     subtitle: "Calculer le montant de votre course."
+    conclusion: "nous adaptons toujours nos tarifs à vos besoins spécifiques pour vous assurer que vous ne payez aucun supplément pour les services dont vous n'avez pas besoin."
   contact:
     title: "FORMULAIRE DE DEVIS & CONTACT"
     label:
