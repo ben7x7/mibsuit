@@ -1,33 +1,61 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  link:
+    services: "SERVICES"
+    contact: "CONTACT"
+    vehicule: "VEHICLE"
+    calculator: "PRICES"
+    langues: "LANGUAGES"
+  home:
+    subtitle: "- PRIVATE DRIVER -"
+    slogan: "Let yourself be transported aboard a vehicle with private driver in optimal confort and safety."
+    btn: "FREE QUOTE"
+  chauffeur:
+    title: "PRIVATE DRIVER IN LE PAYS DE GEX"
+    description: "MIB Suit is committed to providing you a high quality service."
+    policy:
+      one: "Available 24h/24 and 7d/7."
+      two: "Experienced professional driver guaranteeing your comfort and safety, in complete discretion."
+      three: "Adapts to customer requests and is flexible to their requirements."
+      four: "Competitive rates to all desired destinations."
+      five: "Secure payment by credit card on board the vehicle."
+  service:
+    sujet: "OUR SERVICES"
+    subtitle: "More than just a simple ride with a private driver,"
+    subtitle2: "MIB Suit offers you tailor-made services and packages."
+    title:
+      one: "TRANSFER"
+      two: "EVENTS"
+      three: "BUSINESS PACKAGE"
+      four: "TOURISM PACKAGE"
+      five: "SHOPPING PACKAGE"
+      six: "CONCIERGE"
+    page: "TRANSPORT SERVICES ON DEMAND"
+    text:
+      one: "As part of a single trip on demand, whether it is an airport, train station, hotel, ski resort transfer, we will take you to the desired destination. Estimate the cost of service using our online pricing system."
+      two: "MIB Suit accompanies you for all your VIP events, such as openings, evening shows, concerts, restaurants, discotheques... We will take care of the coordination and logistics for transporting your guests."
+      three: "Whether for a few hours, for a day, a week, or more, we provide you with a vehicle with driver. Your driver will adapt the routes to allow you to be perfectly on time for your various appointments."
+      four: "Travel freely, in the company of your personal driver and experience incredible places and great emotions. He will take care of everything so you can make the most of each moment."
+      five: "For all your shopping escapes in Geneva, Lyon, Paris and Milan. Your driver will drive you to the best malls, outlets, and other city centers, with support for all your packages."
+      six: "Free yourself from tasks that you don't have time to do or simply those that MIB Suit can perform for you. We offer you a tailor-made personal assistance service that is entirely dedicated to you."
+    btn: "More"
+  vehicule:
+    title: "ECOLOGICAL VEHICLE"
+    name: "TOYOTA CAMRY HYBRID"
+    description: "Capacity of 1 to 3 people with luggage, ideal for your personal journeys, airport transfers or your daily business journeys."
+  tarifs:
+    prices: "PRICES"
+    transfert:
+      title: "SINGLE RIDE"
+      text: "Take advantage of our online pricing system below to estimate the cost of your ride !"
+    dispo:
+      title: "DISPOSAL"
+      text: "We always tailor our pricing to your specific needs to ensure you don't pay extra for services you don't need."
+    calculator: "QUOTE ON LIGN"
+  contact:
+    title: "QUOTE & CONTACT FORM"
+    label:
+      name: "Name"
+      email: "Email"
+      phone: "Phone"
+      message: "Please describe your needs on details..."
+    button: "Send your message"

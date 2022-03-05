@@ -43,9 +43,14 @@ fr:
     name: "TOYOTA CAMRY HYBRIDE"
     description: "Capacité de 1 à 3 places avec bagages, idéale pour vos trajets personnels, transferts d’aéroport ou vos trajets professionnels quotidiens."
   tarifs:
-    title: "Devis en ligne"
-    subtitle: "Calculer le montant de votre course."
-    conclusion: "nous adaptons toujours nos tarifs à vos besoins spécifiques pour vous assurer que vous ne payez aucun supplément pour les services dont vous n'avez pas besoin."
+    prices: "TARIFS"
+    transfert:
+      title: "TRAJET UNIQUE"
+      text: "Profitez de notre système de tarification en ligne ci-dessous pour estimer le coût de votre course !"
+    dispo:
+      title: "MISE A DISPOSITION"
+      text: "Nous adaptons toujours nos tarifs à vos besoins spécifiques pour vous assurer que vous ne payez aucun supplément pour les services dont vous n'avez pas besoin."
+    calculator: "DEVIS EN LIGNE"
   contact:
     title: "FORMULAIRE DE DEVIS & CONTACT"
     label:
@@ -53,3 +58,4 @@ fr:
       email: "Email"
       phone: "Téléphone"
       message: "Message"
+    button: "Envoyer votre message"

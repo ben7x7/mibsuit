@@ -10,7 +10,7 @@
       <p><%= t('home.slogan') %></p>
       <div class="home-buttons">
         <div class="btn-phone"><i class="fas fa-phone-alt"></i>06.13.35.23.49</div>
-        <%= link_to t('home.btn'), class:'btn-home' %>
+        <%= link_to t('home.btn'), root_path(anchor: 'contact') %>
       </div>
     </div>
   </div>
@@ -166,11 +166,11 @@
     <div class="form-wrapper">
       <form action="https://formspree.io/f/moqrvrap" method="POST" >
         <input type="text" name="name" id="full-name" autocomplete="off" required placeholder="<%= t('contact.label.name') %>" />
-        <input type="email" name="_replyto" autocomplete="off" required placeholder="Email"/>
-        <input type="phone" name="phone" autocomplete="off" required placeholder="Téléphone"/>
-        <textarea row="3" name="message" id="message" required placeholder="Message..."></textarea>
+        <input type="email" name="_replyto" autocomplete="off" required placeholder="<%= t('contact.label.email') %>"/>
+        <input type="phone" name="phone" autocomplete="off" required placeholder="<%= t('contact.label.phone') %>"/>
+        <textarea row="3" name="message" id="message" required placeholder="<%= t('contact.label.message') %>"></textarea>
         <input type="hidden" name="_subject" id="email-subject" value="Formulaire SAP">
-        <input type="submit" value="ENVOYER VOTRE MESSAGE" class="btn-contact">
+        <input type="submit" value="<%= t('contact.button') %>" class="btn-contact">
       </form>
     </div>
   </div>

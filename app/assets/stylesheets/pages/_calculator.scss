@@ -1,3 +1,74 @@
+.mib-section-calculator {
+  padding: 80px 15px;
+}
+
+.tarifs-title h1 {
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.tarifs-wrapper {
+  display: flex;
+  padding-top: 50px;
+}
+
+.tarifs-transfert {
+  padding: 40px 25px;
+  width: 50%;
+  background-color: #f4f4f4;
+}
+
+.warming {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  padding: 20px 15px;
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+.warming .fas {
+  color: white;
+  margin-right: 10px;
+}
+
+.warming p {
+  margin-bottom: 0px;
+  color: white;
+}
+
+.tarifs-dispo {
+  width: 50%;
+  padding: 40px 25px;
+  background-color: black;
+  color: white;
+}
+
+.tarifs-transfert h3,
+.tarifs-dispo h3 {
+  text-align: center;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.tarifs-transfert p,
+.tarifs-dispo p {
+  text-align: center;
+}
+
+.calculator {
+  max-width: 900px;
+  margin: auto;
+}
+
+.calculator-title {
+  padding: 50px 0px;
+}
+
+.calculator h3 {
+  font-weight: bold;
+}
 
 .form-group {
   display: flex;
@@ -32,4 +103,3 @@ label {
 #googleMap {
   height: 50vh;
 }
-
