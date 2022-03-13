@@ -37,7 +37,7 @@ const showDistance = () => {
     directionsService.route(request, (result, status) => {
       if (status == google.maps.DirectionsStatus.OK) {
         const load = 5;
-        const coef = 1.35;
+        const coef = 1.80;
         const km = result.routes[0].legs[0].distance.value / 1000;
         console.log(km);
         const price = coef * km + load;
