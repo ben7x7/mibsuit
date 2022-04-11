@@ -7,5 +7,9 @@ Rails.application.routes.draw do
     get 'terms', to: 'pages#terms', as: :terms
     get 'privacy', to: 'pages#privacy', as: :privacy
     get 'cgv', to: 'pages#cgv', as: :cgv
+
+    get '/404', to: 'errors#not_found', via: :all
+    get '/422', to: 'errors#unacceptable', via: :all
+    get '/500', to: 'errors#server_error', via: :all
   end
 end
