@@ -1,0 +1,35 @@
+.section-errors {
+  background-image: image-url('mib-error.WebP');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70vh;
+}
+.error h1 {
+  font-size: 20px;
+  color: $white;
+  font-weight: bold;
+}
+.btn-error {
+  border: 2px solid $white;
+  border-radius: 50px;
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 1rem 2rem;
+}
+.btn-error a {
+  text-decoration: none;
+}
+a.btn-error:hover {
+  text-decoration: none;
+  color: $white;
+}
