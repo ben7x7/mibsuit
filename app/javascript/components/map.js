@@ -1,4 +1,4 @@
-const showDistance = () => {
+const showDistance = (e) => {
   //create autocomplete objects for all inputs
   var options = { types: ['address']};
   var input1 = document.getElementById("from");
@@ -36,7 +36,7 @@ const showDistance = () => {
     //  Pass the request to the route method
     directionsService.route(request, (result, status) => {
       if (status == google.maps.DirectionsStatus.OK) {
-        const load = 5;
+        const load = 7;
         const coef = 1.80;
         const km = result.routes[0].legs[0].distance.value / 1000;
         console.log(km);

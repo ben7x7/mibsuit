@@ -26,11 +26,11 @@ require("channels")
 import "bootstrap";
 
 // Internal imports, e.g:
-import { gallery } from '../components/gallery';
+// import { gallery } from '../components/gallery';
 import { showDistance } from '../components/map';
 
-document.addEventListener('turbolinks:load', () => {
+  document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
-  gallery();
+  // gallery();
   showDistance();
-});
+  });

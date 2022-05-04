@@ -12,7 +12,7 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
       <%= link_to t('link.services'), services_path, class: "nav-link", id: "nav-services" %>
-      <%= link_to t('link.calculator'), calculator_path, class: "nav-link", id: "nav-calculator" %>
+      <%= link_to t('link.calculator'), root_path(anchor: 'calculator'), class: "nav-link", id: "nav-calculator" %>
       <%= link_to t('link.vehicule'), root_path(anchor: 'vehicule'), class: "nav-link", id: "nav-vehicule" %>
       <%= link_to t('link.contact'), root_path(anchor: 'contact'), class: "nav-link", id: "nav-contact" %>
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
