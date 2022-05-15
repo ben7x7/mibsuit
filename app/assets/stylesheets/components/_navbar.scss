@@ -1,58 +1,66 @@
 .navbar {
   width: 100%;
-  height: 80px;
+  height: 70px;
   background-color: #FFFFFF;
-  color: #161623;
+  color: $mib;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 30px;
   position: fixed;
   z-index: 100;
+  padding: 0px;
   box-shadow: 0px 0px 1px rgba(0,0,0,0.5);
 }
-
 #brand {
   font-weight: bold;
-  color: #161623;
+  color: $mib;
   font-family: 'Rammetto One', cursive;
+  margin-left: 2rem;
 }
-
+.navbar-nav {
+  background-color: $white;
+}
+.navbar .navbar-collapse {
+  flex-grow: 0;
+  padding-right: 2rem;
+}
 a.nav-link {
   letter-spacing: 1.2;
-  color: #161623;
+  color: $mib;
   padding-left: 2rem !important;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
-
 a#navbarDropdown.dropdown-toggle {
-  color: #161623;
+  color: $mib;
 }
-
-a.nav-link.dropdown-item {
-  color: #074E81;
-  text-decoration: none;
-  text-align: center;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .dropdown-menu {
   position: absolute;
   top: 90px;
   right: 30px;
   width: 100px;
 }
-
 .languages-list {
   padding: 0px;
   text-align: center;
   list-style: none;
 }
 
-#navbarNavAltMarkup {
+@media(max-width: 992px) {
+  .fa-bars {
+    color: $mib;
+    margin-right: 2rem;
+  }
+  a.nav-link:hover {
+    color: $white;
+    background-color: $mib;
+  }
+  a#navbarDropdown.dropdown-toggle:hover {
+    color: $white;
+  }
+  .navbar .navbar-collapse {
+    padding-right: 0;
 
+  }
 }
+
