@@ -15,6 +15,7 @@
     </div>
   </div>
 </div>
+
 <div class="mib-driver">
   <div class="title-driver">
     <h2><%= t('chauffeur.title') %></h2>
@@ -57,6 +58,7 @@
     </div>
   </div>
 </div>
+
 <div class="mib-prestations" id="prestations">
   <div class="title-section">
     <h2><%= t('service.sujet') %></h2>
@@ -109,9 +111,10 @@
     </div>
   </div>
 </div>
-<div class="mib-section-calculator" id="calculator">
-  <div class="tarifs-title text-center">
-    <h1><%= t('tarifs.prices') %></h1>
+
+<div class="mib-tarifs" id="calculator">
+  <div class="title-section title-tarifs text-center">
+    <h2><%= t('tarifs.prices') %></h2>
   </div>
   <div class="tarifs-wrapper">
     <div class="tarifs-transfert">
@@ -131,34 +134,36 @@
       </div>
     </div>
   </div>
-  <div class="calculator" >
-    <div class="calculator-title text-center">
-      <h3><%= t('tarifs.calculator') %></h3>
-    </div>
-    <div class="container-fluid" >
-      <div class="wrapper-form">
-        <form class="form">
-          <div class="form-group">
-            <label for="from"><i class="far fa-dot-circle"></i></label>
-            <input type="text" id="from" placeholder="Origin" class="form-control">
-          </div>
-          <div class="form-group">
-            <label for="to"><i class="fas fa-map-marker-alt"></i></label>
-            <input type="text" id="to" placeholder="Destination" class="form-control">
-          </div>
-        </form>
-        <div class="btns">
-          <button class="btn btn-warning btn-lg" id="btn-reset">RESET</button>
-          <button class="btn btn-success btn-lg" id="btn-mib">VALID</button>
+</div>
+
+<div class="mib-calculator" >
+  <div class="title-section title-devis text-center">
+    <h2><%= t('tarifs.calculator') %></h2>
+  </div>
+  <div class="container-fluid" >
+    <div class="wrapper-form">
+      <form class="form">
+        <div class="form-group">
+          <label for="from"><i class="far fa-dot-circle"></i></label>
+          <input type="text" id="from" placeholder="Origin" class="form-control">
         </div>
+        <div class="form-group">
+          <label for="to"><i class="fas fa-map-marker-alt"></i></label>
+          <input type="text" id="to" placeholder="Destination" class="form-control">
+        </div>
+      </form>
+      <div class="btns">
+        <button class="btn btn-warning btn-lg" id="btn-reset">RESET</button>
+        <button class="btn btn-success btn-lg" id="btn-mib">VALID</button>
       </div>
     </div>
-    <div class="container-fluid">
-      <div id="output"></div>
-      <div id="googleMap"></div>
-    </div>
+  </div>
+  <div class="container-fluid">
+    <div id="output"></div>
+    <div id="googleMap"></div>
   </div>
 </div>
+
 <div class="mib-vehicule" id="vehicule">
   <div class="title-section">
     <h2 id="title-vehicule"><%= t('vehicule.title') %></h2>
@@ -168,22 +173,95 @@
   <div class="vehicule-description">
     <p><%= t('vehicule.description') %></p>
   </div>
-  <div class="grid-container">
-    <img src="/assets/sm-image1.png" data-imagesrc="/assets/image1.png" alt="Toyota Camry" class="lightbox-enabled">
-    <img src="/assets/sm-image2.png" data-imagesrc="/assets/image2.png" alt="Toyota Camry" class="lightbox-enabled">
-    <img src="/assets/sm-image3.png" data-imagesrc="/assets/image3.png" alt="Toyota Camry" class="lightbox-enabled">
-    <img src="/assets/sm-image4.png" data-imagesrc="/assets/image4.png" alt="Toyota Camry" class="lightbox-enabled">
-  </div>
-  <div class="lightbox-container">
-    <div class="lightbox-image-wrapper">
-      <button class="lightbox-btn left" id="left">
-        <%= image_tag 'prev.png' %>
-      </button>
-      <img alt="Toyota" class="lightbox-image">
-      <button class="lightbox-btn right" id="right">
-        <%= image_tag 'next.png' %>
-      </button>
+</div>
+<div class="title-section title-gallery text-center">
+  <h2>GALLERIE D'IMAGES</h2>
+</div>
+<div class="img-banner"></div>
+<div class="media-scroller snaps-inline">
+
+  <div class="media-element">
+    <%= image_tag('image1.png') %>
+    <div class="media-content">
+      <div class = "zoom-text">
+        +
+      </div>
     </div>
+  </div>
+
+  <div class="media-element">
+    <%= image_tag('image2.png') %>
+    <div class="media-content">
+      <div class = "zoom-text">
+        +
+      </div>
+    </div>
+  </div>
+
+  <div class="media-element">
+    <%= image_tag('image3.png') %>
+    <div class="media-content">
+      <div class = "zoom-text">
+        +
+      </div>
+    </div>
+  </div>
+
+  <div class="media-element">
+    <%= image_tag('image4.png') %>
+    <div class="media-content">
+      <div class = "zoom-text">
+        +
+      </div>
+    </div>
+  </div>
+
+  <div class="media-element">
+    <%= image_tag('image5.png') %>
+    <div class="media-content">
+      <div class = "zoom-text">
+        +
+      </div>
+    </div>
+  </div>
+
+  <div class="media-element">
+    <%= image_tag('image6.png') %>
+    <div class="media-content">
+      <div class = "zoom-text">
+        +
+      </div>
+    </div>
+  </div>
+
+  <div class="media-element">
+    <%= image_tag('image7.png') %>
+    <div class="media-content">
+      <div class = "zoom-text">
+        +
+      </div>
+    </div>
+  </div>
+
+  <div class="media-element">
+    <%= image_tag('image8.png') %>
+    <div class="media-content">
+      <div class = "zoom-text">
+        +
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="img-banner"></div>
+
+<div class="image-view"></div>
+<div class = "image-box">
+  <div id = "prev-btn">
+    <%= image_tag 'prev.png' %>
+  </div>
+  <div id = "next-btn">
+    <%= image_tag 'next.png' %>
   </div>
 </div>
 
@@ -218,7 +296,7 @@
         <input type="email" name="_replyto" autocomplete="off" required placeholder="<%= t('contact.label.email') %>"/>
         <input type="phone" name="phone" autocomplete="off" required placeholder="<%= t('contact.label.phone') %>"/>
         <textarea row="3" name="message" id="message" required placeholder="<%= t('contact.label.message') %>"></textarea>
-        <input type="hidden" name="_subject" id="email-subject" value="Formulaire SAP">
+        <input type="hidden" name="_subject" id="email-subject" value="Formulaire MIB">
         <input type="submit" value="<%= t('contact.button') %>" class="btn-contact">
       </form>
     </div>

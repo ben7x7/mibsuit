@@ -2,49 +2,102 @@
   padding: 80px 0px;
   background-color: #F3F3F3;
 }
-
-.title-section h1 {
+.header-title h1 {
   color: black;
   font-size: 32px;
   font-weight: bold;
-  padding: 50px 0px;
+  padding: 60px 16px;
 }
-
 .services-wrapper {
-  max-width: 1024px;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .service {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
-.service:nth-child(odd) {
+.service:nth-child(even) {
   flex-direction: row-reverse;
 }
-
 .service-img {
-  width: 50%;
-  height: 300px;
+  text-align: center;
+  background-color: $white;
 }
-
+.service-img {
+  width: 500px;
+  height: 300px;
+  background-size: cover
+}
+.service-img.service-transfert {
+  background-image: image_url('transfert.WebP');
+}
+.service-img.service-events {
+  background-image: image_url('event.WebP');
+}
+.service-img.service-business {
+  background-image: image_url('businessman.WebP');
+}
+.service-img.service-tourisme {
+  background-image: image_url('jeteau.WebP');
+}
+.service-img.service-shopping {
+  background-image: image_url('shopping.WebP');
+}
+.service-img.service-concierge {
+  background-image: image_url('concierge.WebP');
+}
 .service-description {
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  max-width: 500px;
+  height: 300px;
+  padding: 1.2rem;
 }
-
 .service-description h3 {
-  margin-bottom: 30px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: black;
+  margin-bottom: 30px;
 }
-
 .service-description p {
   text-align: center;
   color: #5c6366;
 }
+@media(max-width: 992px) {
+  .service {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+  }
+
+  .service-description {
+    text-align: center;
+  }
+}
+
+@media(max-width: 576px) {
+  .service {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: center;
+  }
+  .service-description {
+    width: 350px;
+  }
+  .service-img {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+
+
+
 

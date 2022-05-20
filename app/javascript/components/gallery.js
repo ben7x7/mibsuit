@@ -1,75 +1,50 @@
 const gallery = () => {
   // query selector
-  const lightboxEnabled = document.querySelectorAll('.lightbox-enabled');
-  const lightboxArray = Array.from(lightboxEnabled);
-  const lastImage = lightboxArray.length -1;
+const zoomBtn = document.querySelectorAll('.zoom-text');
+const allImages = document.querySelectorAll('.media-element');
+const imageView = document.querySelector('.image-view');
+const nextBtn = document.getElementById('next-btn');
+const prevBtn = document.getElementById('prev-btn');
+const imageBox = document.querySelector('.image-box');
 
-  const lightboxContainer = document.querySelector('.lightbox-container');
-  const lightboxImage = document.querySelector('.lightbox-image');
-
-  const lightboxBtns = document.querySelectorAll('.lightbox-btn');
-  const lightboxBtnLeft = document.querySelector('#left');
-  const lightboxBtnRight = document.querySelector('#right');
-
-  let activeImage;
+let currentImageIdx = 0;
 
   // Functions
+imageView.addEventListener('click', function(){
+    this.style.display = "none";
+    imageBox.style.display = "none";
+})
 
-  const showLightBox = () => { lightboxContainer.classList.add('active') }
 
-  const hideLightBox = () => { lightboxContainer.classList.remove('active') }
+zoomBtn.forEach(function(btn, index){
+    btn.addEventListener('click', function(){
+        imageView.style.display = "block";
+        imageBox.style.display = "block";
+        currentImageIdx = index + 1;
+        currentImageDisplay(currentImageIdx);
+    })
+})
 
-  const setActiveImage = (image) => {
-    lightboxImage.src = image.dataset.imagesrc;
-    activeImage = lightboxArray.indexOf(image);
+function currentImageDisplay(position){
+    imageBox.style.background = `url('https://res.cloudinary.com/bessiere/image/upload/image${currentImageIdx}.png') center/cover no-repeat`;
+}
 
-    switch (activeImage) {
-      case 0:
-        lightboxBtnLeft.classList.add('inactive');
-        break;
-      case lastImage:
-        lightboxBtnRight.classList.add('inactive');
-        break;
-      default:
-        lightboxBtns.forEach(btn => {
-          btn.classList.remove('inactive');
-        })
+prevBtn.addEventListener('click', function(){
+    currentImageIdx--;
+    if(currentImageIdx === 0){
+        currentImageIdx = allImages.length;
     }
-  }
+    currentImageDisplay(currentImageIdx);
+})
 
-  const transitionSlideLeft = () => {
-    lightboxBtnLeft.focus();
-    activeImage === 0 ? setActiveImage(lightboxArray[lastImage]) : setActiveImage(lightboxArray[activeImage].previousElementSibling);
-  }
+nextBtn.addEventListener('click', function(){
+    currentImageIdx++;
+    if(currentImageIdx === 5){
+        currentImageIdx = 1;
+    }
+    currentImageDisplay(currentImageIdx);
+})
 
-  const transitionSlideRight = () => {
-    lightboxBtnRight.focus();
-    activeImage === lastImage ? setActiveImage(lightboxArray[0]) : setActiveImage(lightboxArray[activeImage].nextElementSibling);
-  }
-
-  const transitionSlideHandler = (moveItem) => {
-    moveItem.includes('left') ? transitionSlideLeft() : transitionSlideRight();
-  }
-
-  // Event Listeners
-
-  lightboxEnabled.forEach(image => {
-    image.addEventListener('click', (e) => {
-      showLightBox();
-      setActiveImage(image);
-    })
-  })
-
-  lightboxContainer.addEventListener('click', (e) => {
-    hideLightBox();
-  })
-
-  lightboxBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      transitionSlideHandler(e.currentTarget.id);
-    })
-  })
-};
+}
 
 export { gallery };

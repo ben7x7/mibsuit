@@ -1,23 +1,29 @@
 .mib-section-calculator {
   padding: 80px 15px;
+  background-color: #f4f4f4;
 }
 
 .tarifs-title h1 {
   font-weight: bold;
-  padding-top: 50px;
+  padding: 30px 0px 50px 0px;
 }
-
 .tarifs-wrapper {
   display: flex;
-  padding-top: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 .tarifs-transfert {
   padding: 40px 25px;
-  width: 50%;
+  width: 350px;
   background-color: #f4f4f4;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow:
+    -5px -5px 9px rgba(155,155,155,0.2),
+    5px 5px 9px rgba(0,0,0,0.2),
+    inset -13px -13px 20px rgba(0,0,0,0.1),
+    inset 13px 13px 20px rgba(255,255,255,1);
 }
-
 .warming {
   display: flex;
   align-items: center;
@@ -25,69 +31,60 @@
   padding: 20px 15px;
   margin: 20px 0px;
 }
-
 .warming .fas {
   color: #B89968;
   margin-right: 10px;
 }
-
 .warming p {
   margin-bottom: 0px;
   font-size: 14px;
 }
-
 .tarifs-dispo {
-  width: 50%;
+  width: 350px;
   padding: 40px 25px;
-  background-color: black;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #191919;
   color: white;
 }
-
 .tarifs-transfert h3,
 .tarifs-dispo h3 {
   text-align: center;
   font-weight: bold;
   padding: 30px;
 }
-
 .tarifs-transfert p,
 .tarifs-dispo p {
   text-align: center;
 }
-
 .calculator {
   max-width: 900px;
   margin: auto;
 }
-
-.calculator-title {
+.title-section.title-devis h2,
+.title-section.title-tarifs h2 {
+  color: $mib;
   padding: 50px 0px;
 }
-
 .calculator h3 {
   font-weight: bold;
 }
-
 .form-group {
   display: flex;
   align-items: center;
   width: 100%;
 }
-
 label {
   width: 25px;
   text-align: center;
   margin: 0px;
 }
-
 .btns {
   margin-left: 25px;
 }
-
 #output {
   margin: 1rem auto;
 }
-
 .alert-mib {
   background-color: $light-gray;
   color: $dark-gray;
@@ -97,7 +94,6 @@ label {
   padding: 1.5rem 1rem;
   text-align: center;
 }
-
 #googleMap {
   height: 50vh;
 }
