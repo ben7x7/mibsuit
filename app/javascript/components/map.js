@@ -39,7 +39,7 @@ const showDistance = (e) => {
         const load = 7;
         const coef = 1.80;
         const km = result.routes[0].legs[0].distance.value / 1000;
-        console.log(km);
+
         const price = coef * km + load;
         // Get distance and time
         const output = document.querySelector('#output');
