@@ -36,16 +36,23 @@ const showDistance = (e) => {
     //  Pass the request to the route method
     directionsService.route(request, (result, status) => {
       if (status == google.maps.DirectionsStatus.OK) {
-        const load = 7;
-        const coef = 1.80;
+        const load = 5;
+        const coef = 2;
         const km = result.routes[0].legs[0].distance.value / 1000;
 
         const price = coef * km + load;
-        // Get distance and time
+        const minPrice = 30;
         const output = document.querySelector('#output');
+        if (km < 13) {
+          output.innerHTML = "<div class='alert-mib'> Distance : " + result.routes[0].legs[0].distance.text + " .<br /> Prix de la course : " + minPrice.toFixed() + ".- € .<br /> Durée du trajet : " + result.routes[0].legs[0].duration.text + ". </div>";
+          directionsDisplay.setDirections(result);
+        }
+        else {
+        // Get distance and time
         output.innerHTML = "<div class='alert-mib'> Distance : " + result.routes[0].legs[0].distance.text + " .<br /> Prix de la course : " + price.toFixed() + ".- € .<br /> Durée du trajet : " + result.routes[0].legs[0].duration.text + ". </div>";
         // Display the routes
         directionsDisplay.setDirections(result);
+        }
       } else {
         // Delete route from map
         directionsDisplay.setDirections({ routes: [] });
