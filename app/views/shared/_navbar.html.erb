@@ -5,7 +5,7 @@
     <% end %>
   </div>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-bars"></i>
   </button>
 
@@ -15,7 +15,7 @@
       <%= link_to t('link.calculator'), root_path(anchor: 'calculator'), class: "nav-link", id: "nav-calculator" %>
       <%= link_to t('link.vehicule'), root_path(anchor: 'vehicule'), class: "nav-link", id: "nav-vehicule" %>
       <%= link_to t('link.contact'), root_path(anchor: 'contact'), class: "nav-link", id: "nav-contact" %>
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <%= t('link.langues') %>
       </a>
       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
