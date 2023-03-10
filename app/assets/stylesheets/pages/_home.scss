@@ -362,6 +362,15 @@ textarea {
   .form-wrapper {
     width: 100%;
   }
-
 }
 
+@media screen and (max-width: 400px){
+  .logo-wrapper {
+    display: none;
+  }
+  .home-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
