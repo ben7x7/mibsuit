@@ -7,7 +7,7 @@
         <h2><%= t('home.subtitle') %></h2>
       </div>
       <div class="logo-wrapper">
-        <%= image_tag 'logo-mib.png' %>
+        <%= image_tag 'logo-mib.WebP', alt: 'Logo MIB Suit' %>
       </div>
       <p><%= t('home.slogan') %></p>
       <div class="home-buttons">
@@ -17,7 +17,6 @@
     </div>
   </div>
 </div>
-
 <div class="mib-driver">
   <div class="title-driver">
     <h2><%= t('chauffeur.title') %></h2>
@@ -41,7 +40,7 @@
       </div>
       <div class="policy-name">
         <div class="policy-icon">
-          <%= image_tag 'service-icon.png' %>
+          <%= image_tag 'icon-service.WebP', alt: 'Icon Service', loading: 'lazy' %>
         </div>
         <p><%= t('chauffeur.policy.three') %></p>
       </div>
@@ -60,7 +59,6 @@
     </div>
   </div>
 </div>
-
 <div class="mib-prestations" id="prestations">
   <div class="title-section">
     <h2><%= t('service.sujet') %></h2>
@@ -71,49 +69,48 @@
   <div class="cards-container">
     <div class="card">
       <div class="content">
-        <%= image_tag 'airport.png' %>
+        <%= image_tag 'icon-airport.WebP', alt: 'Icon Airport', loading: 'lazy' %>
         <h3 class="service-title"><%= t('service.title.one') %></h3>
         <%= link_to t('service.btn'), services_path %>
       </div>
     </div>
     <div class="card">
       <div class="content">
-        <%= image_tag 'events.png' %>
+        <%= image_tag 'icon-events.WebP', alt: 'Icon Events', loading: 'lazy' %>
         <h3 class="service-title"><%= t('service.title.two') %></h3>
         <%= link_to t('service.btn'), services_path(anchor: 'transfert') %>
       </div>
     </div>
     <div class="card">
       <div class="content">
-        <%= image_tag 'business.png' %>
+        <%= image_tag 'icon-business.WebP', alt: 'Icon Business', loading: 'lazy' %>
         <h3 class="service-title"><%= t('service.title.three') %></h3>
         <%= link_to t('service.btn'), services_path(anchor: 'events') %>
       </div>
     </div>
     <div class="card">
       <div class="content">
-        <%= image_tag 'camera.png' %>
+        <%= image_tag 'icon-camera.WebP', alt: 'Icon Camera', loading: 'lazy' %>
         <h3 class="service-title"><%= t('service.title.four') %></h3>
         <%= link_to t('service.btn'), services_path(anchor: 'business') %>
       </div>
     </div>
     <div class="card">
       <div class="content">
-        <%= image_tag 'shopping.png' %>
+        <%= image_tag 'icon-shopping.WebP', alt: 'Icon Shopping', loading: 'lazy' %>
         <h3 class="service-title"><%= t('service.title.five') %></h3>
         <%= link_to t('service.btn'), services_path(anchor: 'tourisme') %>
       </div>
     </div>
     <div class="card">
       <div class="content">
-        <%= image_tag 'concierge.png' %>
+        <%= image_tag 'icon-concierge.WebP', alt: 'Icon Concierge', loading: 'lazy' %>
         <h3 class="service-title"><%= t('service.title.six') %></h3>
         <%= link_to t('service.btn'), services_path(anchor: 'shopping') %>
       </div>
     </div>
   </div>
 </div>
-
 <div class="mib-tarifs" id="calculator">
   <div class="title-section title-tarifs text-center">
     <h2><%= t('tarifs.prices') %></h2>
@@ -137,7 +134,6 @@
     </div>
   </div>
 </div>
-
 <div class="mib-calculator" >
   <div class="calculator-wrapper">
     <div class="title-section title-devis text-center">
@@ -167,105 +163,29 @@
     </div>
   </div>
 </div>
-
 <div class="mib-vehicule" id="vehicule">
   <div class="title-section">
     <h2 id="title-vehicule"><%= t('vehicule.title') %></h2>
   </div>
-  <%= image_tag 'mib-toyota.WebP' %>
+  <%= image_tag 'mib-toyota.WebP', alt: 'Toyota Camry', loading: 'lazy' %>
   <h4><%= t('vehicule.name') %></h4>
   <div class="vehicule-description">
     <p><%= t('vehicule.description') %></p>
   </div>
 </div>
 <div class="title-section title-gallery text-center">
-  <h2>GALLERIE D'IMAGES</h2>
+  <h2>GALERIE D'IMAGES</h2>
 </div>
-<div class="img-banner"></div>
-<div class="media-scroller snaps-inline">
-
-  <div class="media-element">
-    <%= image_tag('image1.png') %>
-    <div class="media-content">
-      <div class = "zoom-text">
-        +
-      </div>
-    </div>
-  </div>
-
-  <div class="media-element">
-    <%= image_tag('image2.png') %>
-    <div class="media-content">
-      <div class = "zoom-text">
-        +
-      </div>
-    </div>
-  </div>
-
-  <div class="media-element">
-    <%= image_tag('image3.png') %>
-    <div class="media-content">
-      <div class = "zoom-text">
-        +
-      </div>
-    </div>
-  </div>
-
-  <div class="media-element">
-    <%= image_tag('image4.png') %>
-    <div class="media-content">
-      <div class = "zoom-text">
-        +
-      </div>
-    </div>
-  </div>
-
-  <div class="media-element">
-    <%= image_tag('image5.png') %>
-    <div class="media-content">
-      <div class = "zoom-text">
-        +
-      </div>
-    </div>
-  </div>
-
-  <div class="media-element">
-    <%= image_tag('image6.png') %>
-    <div class="media-content">
-      <div class = "zoom-text">
-        +
-      </div>
-    </div>
-  </div>
-
-  <div class="media-element">
-    <%= image_tag('image7.png') %>
-    <div class="media-content">
-      <div class = "zoom-text">
-        +
-      </div>
-    </div>
-  </div>
-
-  <div class="media-element">
-    <%= image_tag('image8.png') %>
-    <div class="media-content">
-      <div class = "zoom-text">
-        +
-      </div>
-    </div>
-  </div>
-
-</div>
-<div class="img-banner"></div>
-
-<div class="image-view"></div>
-<div class = "image-box">
-  <div id = "prev-btn">
-    <%= image_tag 'prev.png' %>
-  </div>
-  <div id = "next-btn">
-    <%= image_tag 'next.png' %>
+<div class="contenu_carou_auto">
+  <div class="caroussel-image">
+    <%= image_tag 'image1.WebP', alt: 'Toyota Camry Hybride', loading: 'lazy' %>
+    <%= image_tag 'image2.WebP', alt: 'Back seats', loading: 'lazy' %>
+    <%= image_tag 'image3.WebP', alt: 'Toyota Trunk', loading: 'lazy' %>
+    <%= image_tag 'image4.WebP', alt: 'Toyota Inside', loading: 'lazy' %>
+    <%= image_tag 'image5.WebP', alt: 'Credit card payment', loading: 'lazy' %>
+    <%= image_tag 'image6.WebP', alt: 'Opening the door', loading: 'lazy' %>
+    <%= image_tag 'image7.WebP', alt: 'Cocktail Event', loading: 'lazy' %>
+    <%= image_tag 'image8.WebP', alt: 'Toyota Inside', loading: 'lazy' %>
   </div>
 </div>
 

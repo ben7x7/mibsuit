@@ -1,127 +1,72 @@
-.title-section.title-gallery h2 {
+.title-section.title-gallery > h2 {
   color: $mib;
-
 }
 
-.media-scroller {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 21%;
-  grid-gap: 10px;
-  background-color: $black;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
+/*****carrousel 3d automatique*****/
+
+.contenu_carou_auto {
+  margin: 6rem auto;
+  width: 420px;
+  height: 279px;
+  perspective: 8000px;
 }
 
-.media-element {
-  display: grid;
-  grid-template-rows: min-content;
-  border-radius: 5px;
+.caroussel-image {
+  animation: rotation 24s infinite alternate linear;
+  transform-style: preserve-3d;
   position: relative;
 }
-.media-element > img {
-  inline-size: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
 
-.snaps-inline {
-  scroll-snap-type: inline mandatory;
-}
-
-.snaps-inline > * {
-  scroll-snap-align: start;
-}
-
-.media-content{
-  background: transparent;
+.caroussel-image img{
   position: absolute;
   top: 0;
-  bottom: 0;
-  width: 100%;
-  display: grid;
-  place-content: center;
-  transition: opacity 1s ease;
-  color: #fff;
-  opacity: 0;
+  left: 0;
 }
 
-.media-element:hover .media-content{
-  opacity: 1;
+.caroussel-image img {
+  filter: drop-shadow(0 12px 5px hsla(0,0%,0%,.4));
+  width: 400px;
+  height: 266px;
+  left: 10px;
+  outline: 1px solid transparent;
+  backface-visibility: hidden;
 }
 
-.zoom-text{
-  width: 50px;
-  height: 50px;
-  background: $gray;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  transition: transform 0.2s linear;
+.caroussel-image img:nth-child(1) {
+transform: translate3d(0,0,495px)
 }
 
-/******** js related *******/
-
-.image-view{
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  display: none;
+.caroussel-image img:nth-child(2) {
+transform: rotateY(45deg) translateZ(495px)
 }
 
-.image-box{
-  width:70vw;
-  height: 80vh;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
+.caroussel-image img:nth-child(3) {
+  transform: rotateY(90deg) translateZ(495px)
 }
 
-#prev-btn, #next-btn{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
+.caroussel-image img:nth-child(4) {
+  transform: rotateY(135deg) translateZ(495px)
 }
 
-#prev-btn{
-  left: -50px;
+.caroussel-image img:nth-child(5) {
+  transform: rotateY(180deg) translateZ(495px)
 }
 
-#next-btn{
-  right: -50px;
+.caroussel-image img:nth-child(6) {
+  transform: rotateY(225deg) translateZ(495px)
 }
 
-.img-banner {
-  width: 100%;
-  height: 40px;
-  background-image: image-url('gallerie-border.WebP');
-  background-size: contain;
-  background-repeat: repeat;
+.caroussel-image img:nth-child(7) {
+  transform: rotateY(270deg) translateZ(495px)
 }
 
-/****** media queries *******/
-
-@media(max-width: 992px){
-  .image-box{
-      height: 55vh;
-  }
+.caroussel-image img:nth-child(8) {
+  transform: rotateY(315deg) translateZ(495px)
 }
 
-@media(max-width: 678px){
-  .image-box{
-      height: 40vh;
-  }
+@keyframes rotation {
+  from {transform: rotatey(0)}
+  to {transform: rotatey(1turn)}
 }
 
-@media(max-width: 400px){
-  .image-box{
-      height: 25vh;
-  }
-}
+/*****fin carrousel 3d automatique*****/
