@@ -38,10 +38,15 @@
   padding: 20px 15px;
   margin: 20px 0px;
 }
-.warming .fas {
-  color: #B89968;
+
+.warming > img {
   margin-right: 10px;
 }
+
+#btn-tarif {
+  text-decoration: none;
+}
+
 .warming p {
   margin-bottom: 0px;
   font-size: 14px;
@@ -84,7 +89,7 @@
 label {
   width: 25px;
   text-align: center;
-  margin: 0px;
+  margin-right: 10px;
 }
 .btns {
   margin-left: 25px;

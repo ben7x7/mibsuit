@@ -32,6 +32,11 @@
   font-size: 18px;
   max-width: 500px;
 }
+
+.btn-phone > img {
+  margin-right: 15px;
+}
+
 .title .btn-phone,
 .title .home-buttons a {
   border: solid 2px #000000;
@@ -51,10 +56,7 @@
 .title .home-buttons {
   display: flex;
 }
-i.fa-phone-alt {
-  color: white !important;
-  margin-right: 15px;
-}
+
 // SECTION CHAUFFEUR
 
 .mib-driver {
@@ -94,23 +96,9 @@ i.fa-phone-alt {
 }
 
 .policy-icon {
-  background-color: #cbcfd1;
-  border-radius: 100%;
-  height: 60px;
-  width: 60px !important;
-  color: black;
   margin: 0px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-i.fa-user-tie,
-i.fa-euro-sign,
-i.fa-credit-card {
-  width: 60px !important;
-  display: flex;
-  justify-content: center;
-}
+
 
 // SECTION SERVICES
 
@@ -236,6 +224,7 @@ i.fa-credit-card {
 .mib-tarifs {
   padding-top: 80px
 }
+
 // SECTION VEHICULE
 
 .mib-vehicule {
@@ -268,7 +257,7 @@ i.fa-credit-card {
 .mib-contact {
   min-height: 100vh;
   background-color: black;
-  color: #B89968;
+  color: $gold;
   padding: 50px 0px 80px 0px;
 }
 
@@ -291,20 +280,7 @@ i.fa-credit-card {
 }
 
 .info-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: #B89968;
-  text-align: center;
   margin-bottom: 20px;
-}
-
-.far,
-.fas {
-  color: #161623;
 }
 
 .form-wrapper {
@@ -329,7 +305,7 @@ input, textarea {
   padding: 10px 20px;
   margin-bottom: 8px;
   color: $light-gray;
-  outline-color: #B89968 !important;
+  outline-color: $gold !important;
 }
 input {
   height: 55px;
@@ -338,19 +314,19 @@ textarea {
   height: 96px;
 }
 .btn-contact {
-  color: #FFFFFF !important;
+  color: $mib !important;
   padding: 10px 25px !important;
   margin: 25px 0px !important;
-  background-color: #B89968 !important;
-  border: 3px solid #B89968 !important;
+  background-color: $gold !important;
+  border: 3px solid $gold !important;
   border-radius: 5px !important;
   width: 100% !important;
   font-weight: bold;
 }
 .btn-contact:hover {
-  border: 3px solid #B89968 !important;
+  border: 3px solid $gold !important;
   background-color: transparent !important;
-  color: #B89968 !important;
+  color: $gold !important;
 }
 
 /*******************************

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-mapmarker</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-430.000000, -500.000000)" fill-rule="nonzero">
+            <g id="icon-mapmarker" transform="translate(430.000000, 500.000000)">
+                <circle id="Oval" fill="#DCC469" cx="37.5" cy="37.5" r="37.5"></circle>
+                <g id="map-marker-alt" transform="translate(18.913043, 13.043478)" fill="#000000">
+                    <path d="M16.4573285,47.9261846 C2.57653278,27.8031484 0,25.7379097 0,18.3423913 C0,8.21213697 8.21213697,0 18.3423913,0 C28.4726456,0 36.6847826,8.21213697 36.6847826,18.3423913 C36.6847826,25.7379097 34.1082498,27.8031484 20.2274541,47.9261846 C19.3165442,49.2420601 17.3681428,49.2419646 16.4573285,47.9261846 Z M18.3423913,25.9850543 C22.5633386,25.9850543 25.9850543,22.5633386 25.9850543,18.3423913 C25.9850543,14.121444 22.5633386,10.6997283 18.3423913,10.6997283 C14.121444,10.6997283 10.6997283,14.121444 10.6997283,18.3423913 C10.6997283,22.5633386 14.121444,25.9850543 18.3423913,25.9850543 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

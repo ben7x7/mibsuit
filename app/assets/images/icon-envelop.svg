@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-envelop</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-260.000000, -507.000000)" fill-rule="nonzero">
+            <g id="icon-envelop" transform="translate(260.000000, 507.000000)">
+                <circle id="Oval" fill="#DCC469" cx="37.5" cy="37.5" r="37.5"></circle>
+                <g id="Envelopp" transform="translate(13.000000, 19.000000)" stroke="#000000" stroke-width="2">
+                    <path d="M2.5,10 C15.4041958,19.2266667 22.9041958,23.84 25,23.84 C27.0958042,23.84 34.5958042,19.2266667 47.5,10" id="Line" stroke-linecap="square"></path>
+                    <rect id="Rectangle" x="1" y="1" width="48" height="35" rx="5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

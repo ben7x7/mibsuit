@@ -11,7 +11,10 @@
       </div>
       <p><%= t('home.slogan') %></p>
       <div class="home-buttons">
-        <div class="btn-phone"><i class="fas fa-phone-alt"></i>+33.613.35.23.49</div>
+        <div class="btn-phone">
+          <%= image_tag 'icon-mobile-white.svg', alt: 'Mobile Icon', height:25 %>
+          +33.613.35.23.49
+        </div>
         <%= link_to t('home.btn'), root_path(anchor: 'contact') %>
       </div>
     </div>
@@ -28,31 +31,31 @@
     <div class="policy">
       <div class="policy-name">
         <div class="policy-icon">
-          <i class="far fa-clock fa-2x"></i>
+          <%= image_tag 'icon-clock.svg', alt: 'Icon Clock', loading: 'lazy', height:50, width:50 %>
         </div>
         <p><%= t('chauffeur.policy.one') %></p>
       </div>
       <div class="policy-name">
         <div class="policy-icon">
-         <i class="fas fa-user-tie fa-2x"></i>
+         <%= image_tag 'icon-driver.svg', alt: 'Icon Driver', loading: 'lazy', height:50, width:50 %>
         </div>
         <p><%= t('chauffeur.policy.two') %></p>
       </div>
       <div class="policy-name">
         <div class="policy-icon">
-          <%= image_tag 'icon-service.WebP', alt: 'Icon Service', loading: 'lazy' %>
+          <%= image_tag 'icon-service.svg', alt: 'Icon Service', loading: 'lazy', height:50, width:50 %>
         </div>
         <p><%= t('chauffeur.policy.three') %></p>
       </div>
       <div class="policy-name">
         <div class="policy-icon">
-          <i class="fas fa-euro-sign fa-2x"></i>
+          <%= image_tag 'icon-euro.svg', alt: 'Icon Euro', loading: 'lazy', height:50, width:50 %>
         </div>
         <p><%= t('chauffeur.policy.four') %></p>
       </div>
       <div class="policy-name">
         <div class="policy-icon">
-          <i class="far fa-credit-card fa-2x"></i>
+          <%= image_tag 'icon-cc.svg', alt: 'Icon Credit Card', loading: 'lazy', height:50, width:50 %>
         </div>
         <p><%= t('chauffeur.policy.five') %></p>
       </div>
@@ -120,7 +123,7 @@
       <h3><%= t('tarifs.transfert.title') %></h3>
       <p><%= t('tarifs.transfert.text') %></p>
       <div class="warming">
-        <i class="fas fa-exclamation-triangle"></i>
+        <%= image_tag 'icon-exclamation.svg', alt: 'Icon Exclamation', loading: 'lazy', height:25 %>
         <p>Hors frais de péage & tunnel.</p>
       </div>
     </div>
@@ -143,11 +146,15 @@
       <div class="wrapper-form">
         <form class="form">
           <div class="form-group">
-            <label for="from"><i class="far fa-dot-circle"></i></label>
+            <label for="from">
+              <%= image_tag 'icon-target.svg', alt: 'Icon Target', loading: 'lazy', height:25 %>
+            </label>
             <input type="text" id="from" placeholder="Origin" class="form-control">
           </div>
           <div class="form-group">
-            <label for="to"><i class="fas fa-map-marker-alt"></i></label>
+            <label for="to">
+              <%= image_tag 'icon-address.svg', alt: 'Icon Destination', loading: 'lazy', height:25 %>
+            </label>
             <input type="text" id="to" placeholder="Destination" class="form-control">
           </div>
         </form>
@@ -196,19 +203,19 @@
   <div class="contact-infos text-center">
     <div class="info-details">
       <div class="info-icon">
-        <i class="fas fa-mobile-alt fa-2x"></i>
+        <%= image_tag 'icon-mobile.svg', alt: 'Icon Mobile', loading: 'lazy', height:50 %>
       </div>
       <p>06.13.35.23.49</p>
     </div>
     <div class="info-details">
       <div class="info-icon">
-        <i class="far fa-envelope fa-2x"></i>
+        <%= image_tag 'icon-envelop.svg', alt: 'Icon Envelop', loading: 'lazy', height:50 %>
       </div>
       <p>abdelk@mibsuit.com</p>
     </div>
     <div class="info-details">
       <div class="info-icon">
-        <i class="fas fa-map-marker-alt fa-2x"></i>
+        <%= image_tag 'icon-mapmarker.svg', alt: 'Icon Map Marker', loading: 'lazy', height:50 %>
       </div>
       <p>459 Rue Francois Estier  <br> 01170 Echenevex</p>
     </div>

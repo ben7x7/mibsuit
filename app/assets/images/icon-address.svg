@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="75px" viewBox="0 0 57 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>map-marker-alt</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-277.000000, -70.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="map-marker-alt" transform="translate(277.000000, 70.000000)">
+                <path d="M25.2345703,73.4868164 C3.95068359,42.6314941 0,39.4647949 0,28.125 C0,12.5919434 12.5919434,0 28.125,0 C43.6580566,0 56.25,12.5919434 56.25,28.125 C56.25,39.4647949 52.2993164,42.6314941 31.0154297,73.4868164 C29.6187012,75.5044922 26.6311523,75.5043457 25.2345703,73.4868164 Z M28.125,39.84375 C34.5971191,39.84375 39.84375,34.5971191 39.84375,28.125 C39.84375,21.6528809 34.5971191,16.40625 28.125,16.40625 C21.6528809,16.40625 16.40625,21.6528809 16.40625,28.125 C16.40625,34.5971191 21.6528809,39.84375 28.125,39.84375 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

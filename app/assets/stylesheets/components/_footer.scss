@@ -14,6 +14,7 @@
 }
 .legales-links a {
   color: $light-gray;
+  text-decoration: none;
 }
 .footer-footer {
   width: 100%;
@@ -22,8 +23,7 @@
   padding-bottom: 15px;
   color: #999999;
 }
-.fab {
-  color: #B89968;
+.social-links > a {
   margin-right: 25px;
 }
 
