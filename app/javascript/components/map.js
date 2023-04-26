@@ -23,9 +23,20 @@ const showDistance = (e) => {
   //  Bind the directionsRenderer to the map
   directionsDisplay.setMap(map);
 
+  // Define a named function for the listener
+  function onBtnMibClick() {
+    // Call the calRoute function
+    calRoute();
+  }
+
+  // Get the button element
   var btnMib = document.getElementById('btn-mib');
-  btnMib.addEventListener('click', function calRoute(){
-    //define calcRoute function
+
+  // Add a passive event listener to the button
+  btnMib.addEventListener('click', onBtnMibClick, { passive: true });
+
+  function calRoute(){
+  //define calcRoute function
     // create request
     var request = {
       origin: document.getElementById('from').value,
@@ -62,7 +73,7 @@ const showDistance = (e) => {
         output.innerHTML = "<div class='alert-danger'><i class='fas fa-exclamation-triangle'></i> Impossible de calculer cette course ! </div>";
       }
     });
-  });
+  }
 };
 
 export { showDistance };
